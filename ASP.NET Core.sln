@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesMovie", "RazorPag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMovie", "MvcMovie\MvcMovie.csproj", "{38DAA989-50AA-4D26-924C-0167543AE108}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp", "BlazorApp\BlazorApp.csproj", "{F027E0FD-8D24-4FD8-BE79-B95831AEF63E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList", "TodoList\TodoList.csproj", "{E3776A35-6616-4695-A452-08BA38750BF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{38DAA989-50AA-4D26-924C-0167543AE108}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38DAA989-50AA-4D26-924C-0167543AE108}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38DAA989-50AA-4D26-924C-0167543AE108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F027E0FD-8D24-4FD8-BE79-B95831AEF63E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F027E0FD-8D24-4FD8-BE79-B95831AEF63E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F027E0FD-8D24-4FD8-BE79-B95831AEF63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F027E0FD-8D24-4FD8-BE79-B95831AEF63E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3776A35-6616-4695-A452-08BA38750BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3776A35-6616-4695-A452-08BA38750BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3776A35-6616-4695-A452-08BA38750BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3776A35-6616-4695-A452-08BA38750BF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
