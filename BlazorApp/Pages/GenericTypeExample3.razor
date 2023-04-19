@@ -1,0 +1,24 @@
+﻿@page "/generic-type-example-3"
+
+<h1>Generic Type Example 3</h1>
+<hr />
+
+@* CascadingValue 级联传递参数*@
+<CascadingValue Value="@stringData">
+    <ListGenericTypeItems3 TExample="string">
+        <ListDisplay3 />
+        <ListDisplay4 />
+    </ListGenericTypeItems3>
+</CascadingValue>
+
+<CascadingValue Value="@integerData">
+    <ListGenericTypeItems3 TExample="int">
+        <ListDisplay3 />
+        <ListDisplay4 />
+    </ListGenericTypeItems3>
+</CascadingValue>
+
+@code {
+    private List<string> stringData = new() { "Item 1", "Item 2" };
+    private List<int> integerData = new() { 1, 2, 3 };
+}

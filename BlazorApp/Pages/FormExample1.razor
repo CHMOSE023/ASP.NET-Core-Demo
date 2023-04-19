@@ -1,0 +1,26 @@
+﻿@page "/form-example-1"
+@using BlazorApp.Data;
+@using Microsoft.Extensions.Logging
+@inject ILogger<FormExample1> Logger
+
+<EditForm Model="@exampleModel" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <InputText id="name" @bind-Value="exampleModel.Name" />
+    <InputTextArea id="message" @bind-Value="exampleModel.Message"> </InputTextArea>
+    <button type="submit">Submit</button>
+</EditForm>
+
+@code {
+    private ExampleModel exampleModel = new();
+
+    private void HandleValidSubmit()
+    {
+        Logger.LogInformation("HandleValidSubmit called");
+        Logger.LogInformation(exampleModel.Name);
+        Logger.LogInformation(exampleModel.Message);
+        exampleModel = new();
+        // Process the valid form
+    }
+}

@@ -1,0 +1,24 @@
+﻿@page "/render-fragment-parent"
+
+<h1>使用子组件呈现</h1>
+<div>
+    <RenderFragmentChild>
+        在子组件中显示此部分内容1 Content of the child component is supplied by the parent component.
+    </RenderFragmentChild>
+
+   
+
+
+    <h1>Hello, world!</h1>
+
+    @RenderWelcomeInfo
+
+    <p>Render the welcome info a second time:</p>
+
+    @RenderWelcomeInfo
+
+</div>
+
+@code{
+    private RenderFragment RenderWelcomeInfo = @<p>Welcome to your new app!</p>;
+}

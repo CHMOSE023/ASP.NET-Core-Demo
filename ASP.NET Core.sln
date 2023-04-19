@@ -5,13 +5,13 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesMovie", "RazorPagesMovie\RazorPagesMovie.csproj", "{2F85D57F-141F-4FB0-984B-26FDF10CB376}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMovie", "MvcMovie\MvcMovie.csproj", "{38DAA989-50AA-4D26-924C-0167543AE108}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcMovie", "MvcMovie\MvcMovie.csproj", "{38DAA989-50AA-4D26-924C-0167543AE108}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp", "BlazorApp\BlazorApp.csproj", "{F027E0FD-8D24-4FD8-BE79-B95831AEF63E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp", "BlazorApp\BlazorApp.csproj", "{F027E0FD-8D24-4FD8-BE79-B95831AEF63E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList", "TodoList\TodoList.csproj", "{E3776A35-6616-4695-A452-08BA38750BF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList", "TodoList\TodoList.csproj", "{E3776A35-6616-4695-A452-08BA38750BF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerSignalRApp", "BlazorServerSignalRApp\BlazorServerSignalRApp.csproj", "{FC505EB6-E4CF-4A2A-A97D-17B9BB1F7452}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServerSignalRApp", "BlazorServerSignalRApp\BlazorServerSignalRApp.csproj", "{FC505EB6-E4CF-4A2A-A97D-17B9BB1F7452}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,55 @@
+﻿@page "/people"
+@using System.Timers
+@implements IDisposable
+@attribute [Authorize]
+
+<ul>
+    @foreach (var person in people)
+    {
+        // 可通过 @key 指令特性来控制元素或组件到集合的映射过程。 使用 @key 可保证基于键的值保留元素或组件。 
+        // 如果前面示例中的 Details 组件在 person 项上键入，则 Blazor 会忽略重新呈现未更改的 Details 组件。
+        <li @key="person">
+            <Details Data="@person.Data" />
+        </li> 
+       
+       
+    }
+</ul>
+
+@code {
+    private Timer timer = new Timer(3000);
+
+    public List<Person> people =
+        new()
+        {
+            { new Person { Data = "Person 1" } },
+            { new Person { Data = "Person 2" } },
+            { new Person { Data = "Person 3" } }
+        };
+
+    protected override void OnInitialized()
+    {
+        timer.Elapsed += (sender, eventArgs) => OnTimerCallback();
+        timer.Start();
+    }
+
+    private void OnTimerCallback()
+    {
+        _ = InvokeAsync(() =>
+        {
+            people.Insert(0,
+                new Person
+                {
+                        Data = $"INSERTED {DateTime.Now.ToString("hh:mm:ss tt")}"
+                });
+            StateHasChanged();
+        });
+    }
+
+    public void Dispose() => timer.Dispose();
+
+    public class Person
+    {
+        public string? Data { get; set; }
+    }
+}

@@ -1,0 +1,18 @@
+﻿@*@typeparam 指令声明生成的组件类的泛型类型参数：*@
+@*@typeparam TEntity where TEntity : IEntity*@
+@typeparam TExample
+
+@if (ExampleList is not null)
+{
+    <ul>
+        @foreach (var item in ExampleList)
+        {
+            <li>@item</li>
+        }
+    </ul>
+}
+
+@code {
+    [Parameter]
+    public IEnumerable<TExample>? ExampleList { get; set; }
+}

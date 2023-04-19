@@ -1,0 +1,15 @@
+﻿@using Microsoft.Extensions.Logging
+@inject ILogger<ReferenceChild> logger
+
+<h2>ReferenceChild(@Value)</h2>
+
+@code {
+    private string? Value { set; get; }
+    public void ChildMethod(int value)
+    {
+        logger.LogInformation("Received {Value} in ChildMethod", value);
+        Value = $"Received {value} in ChildMethod";
+        // 通知组件其状态已更改。 
+        StateHasChanged();
+    }  
+}

@@ -1,0 +1,11 @@
+﻿@attribute [CascadingTypeParameter(nameof(TExample))]
+@typeparam TExample
+
+<h2>List Generic Type Items 2</h2>
+
+@ChildContent
+
+@code {
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+}

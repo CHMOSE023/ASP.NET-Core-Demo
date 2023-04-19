@@ -1,0 +1,17 @@
+﻿@typeparam TExample
+
+@if (ExampleList is not null)
+{
+    <ul style="color:red">
+        @foreach (var item in ExampleList)
+        {
+            <li>@item</li>
+        }
+    </ul>
+}
+
+@code {
+    // 级联传递参数
+    [CascadingParameter]
+    protected IEnumerable<TExample>? ExampleList { get; set; }
+}
