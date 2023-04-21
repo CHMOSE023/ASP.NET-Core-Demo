@@ -1,0 +1,23 @@
+﻿@model RegisterViewModels
+
+<h2>注册</h2>
+
+<form asp-controller="Account" asp-action="Register" method="post">
+
+    <div>
+        <label asp-for="UserName"> </label>
+        <input asp-for="UserName" />
+        <span asp-validation-for="UserName"></span>
+    </div>
+    <div>
+        <label asp-for="PassWorld"> </label>
+        <input asp-for="PassWorld" />
+        <span asp-validation-for="PassWorld"></span>
+    </div>
+    <div>
+        <input type="submit" value="注册" />
+    </div>
+
+    <div asp-validation-summary="All"></div>
+
+</form>
