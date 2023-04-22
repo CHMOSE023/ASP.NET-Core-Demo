@@ -1,0 +1,35 @@
+﻿@model IEnumerable<IdentityRole>
+@{
+  // Layout = "";
+}
+
+
+<h2> @ViewBag.Title</h2>
+
+<table class="table">
+
+    <thead class="table-dark">
+
+        <tr>
+            <th scope="col"> 角色ID </th>
+            <th scope="col"> 角色名 </th>
+            <th scope="col"> 操作 </th>
+
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var r in Model)
+        {
+            <tr>
+                <th scope="row">@r.Id</th>
+                <th>@r.Name</th>
+            </tr>
+        }
+
+    </tbody>
+   
+
+</table>
+
+<a asp-action="AddRole" class="btn btn-primary"> 添加角色</a>
